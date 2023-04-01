@@ -1,0 +1,32 @@
+footer {
+  margin-top: 5rem;
+  width: 100%;
+  background-color: #61270a;
+  display: flex;
+  justify-content: space-between;
+}
+footer > figure > img {
+  width: 300px;
+  margin-left: 5rem;
+}
+.footercard {
+  display: flex;
+  margin-top: 3rem;
+  margin-right: 10rem;
+}
+.aboutus {
+  margin-right: 5rem;
+}
+.aboutus > h1,
+.contactus > h1 {
+  font-size: 1.2rem;
+  color: var(--main-btn-color);
+}
+.aboutus > p > a,
+.contactus > p {
+  color: rgb(253, 244, 233);
+}
+.aboutus > p,
+.contactus > p {
+  margin-top: 1rem;
+}

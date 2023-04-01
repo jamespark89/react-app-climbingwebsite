@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  background-color: #61270a;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  z-index: 999;
+}
+.nav-items {
+  display: flex;
+}
+.nav-items li {
+  margin: 5vw;
+}
+
+.nav-items li a {
+  font-size: 16px;
+  color: white;
+}

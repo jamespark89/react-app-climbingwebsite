@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-app-climbingwebsite/static/css/main.0aafb6a5.css",
+    "main.js": "/react-app-climbingwebsite/static/js/main.13ef4fed.js",
+    "static/media/Hero.jpg": "/react-app-climbingwebsite/static/media/Hero.a4228f029cb1d0026ae3.jpg",
+    "static/media/Climbing_1.jpg": "/react-app-climbingwebsite/static/media/Climbing_1.361825fa73b27d9a13a2.jpg",
+    "static/media/Climbing_7.jpg": "/react-app-climbingwebsite/static/media/Climbing_7.b91d64ac629bf555f847.jpg",
+    "static/media/Climbing_2.jpg": "/react-app-climbingwebsite/static/media/Climbing_2.b8bc4fee053ec3f987a7.jpg",
+    "static/media/Climbing_6.jpg": "/react-app-climbingwebsite/static/media/Climbing_6.84a8eba5522fc1b52ece.jpg",
+    "static/media/Climbing_8.jpg": "/react-app-climbingwebsite/static/media/Climbing_8.d11f02f689c040d03f0f.jpg",
+    "static/media/Climbing_3.jpg": "/react-app-climbingwebsite/static/media/Climbing_3.fc1282d027b4e97ad9d8.jpg",
+    "static/media/Climbing_4.jpg": "/react-app-climbingwebsite/static/media/Climbing_4.1d2dd4a299d9cecb83ce.jpg",
+    "static/media/Event_2.jpeg": "/react-app-climbingwebsite/static/media/Event_2.7b5699d78564c1285cb6.jpeg",
+    "static/media/Climbing_5.jpg": "/react-app-climbingwebsite/static/media/Climbing_5.a7f4d5e8280ea387b0cb.jpg",
+    "static/media/Event_1.jpeg": "/react-app-climbingwebsite/static/media/Event_1.c2cde79f13111471fe68.jpeg",
+    "static/media/Logo.png": "/react-app-climbingwebsite/static/media/Logo.efa111b5233e6b6b2c85.png",
+    "index.html": "/react-app-climbingwebsite/index.html",
+    "main.0aafb6a5.css.map": "/react-app-climbingwebsite/static/css/main.0aafb6a5.css.map",
+    "main.13ef4fed.js.map": "/react-app-climbingwebsite/static/js/main.13ef4fed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0aafb6a5.css",
+    "static/js/main.13ef4fed.js"
+  ]
+}

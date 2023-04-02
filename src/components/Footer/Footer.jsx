@@ -1,6 +1,7 @@
 import React from "react"
 import "./Footer.scss"
 import Logo from "../../assets/Logo.png"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
   return (
@@ -12,18 +13,18 @@ export default function Footer() {
         <div className="aboutus">
           <h1>ABOUT US</h1>
           <p>
-            <a href="terms&conditions">
+            <Link to="terms&conditions">
               Terms & Conditions
-            </a>
+            </Link>
           </p>
           <p>
-            <a href="privacy">Privacy</a>
+            <Link to="privacy">Privacy</Link>
           </p>
           <p>
-            <a href="copyright">Copyright</a>
+            <Link to="copyright">Copyright</Link>
           </p>
           <p>
-            <a href="/#contact">Contact us</a>
+            <Link to="/#contact">Contact us</Link>
           </p>
         </div>
         <div className="contactus">

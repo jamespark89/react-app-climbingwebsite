@@ -13,10 +13,10 @@ import Privacy from "./pages/privacy/privacy"
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react-app-climbingwebsite">
       <Navbar />
       <Routes>
-        <Route path="" exact element={<Home />} />
+        <Route path="/" exact element={<Home />} />
         <Route
           path="/terms&conditions"
           exact

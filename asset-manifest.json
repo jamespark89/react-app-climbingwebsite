@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-app-climbingwebsite/static/css/main.0aafb6a5.css",
-    "main.js": "/react-app-climbingwebsite/static/js/main.b707b110.js",
+    "main.js": "/react-app-climbingwebsite/static/js/main.0289ceb8.js",
     "static/media/Hero.jpg": "/react-app-climbingwebsite/static/media/Hero.a4228f029cb1d0026ae3.jpg",
     "static/media/Climbing_1.jpg": "/react-app-climbingwebsite/static/media/Climbing_1.361825fa73b27d9a13a2.jpg",
     "static/media/Climbing_7.jpg": "/react-app-climbingwebsite/static/media/Climbing_7.b91d64ac629bf555f847.jpg",
@@ -16,10 +16,10 @@
     "static/media/Logo.png": "/react-app-climbingwebsite/static/media/Logo.efa111b5233e6b6b2c85.png",
     "index.html": "/react-app-climbingwebsite/index.html",
     "main.0aafb6a5.css.map": "/react-app-climbingwebsite/static/css/main.0aafb6a5.css.map",
-    "main.b707b110.js.map": "/react-app-climbingwebsite/static/js/main.b707b110.js.map"
+    "main.0289ceb8.js.map": "/react-app-climbingwebsite/static/js/main.0289ceb8.js.map"
   },
   "entrypoints": [
     "static/css/main.0aafb6a5.css",
-    "static/js/main.b707b110.js"
+    "static/js/main.0289ceb8.js"
   ]
 }

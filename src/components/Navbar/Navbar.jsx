@@ -1,8 +1,10 @@
 import React from "react"
+import { HashLink as Link } from "react-router-hash-link"
 import logo from "../../assets/Logo.png"
 import "./Navbar.scss"
 
 export default function Navbar() {
+  const navItems = ["events", "gallery", "board", "contact"]
   return (
     <nav className="navbar">
       <figure className="logo">
@@ -12,26 +14,16 @@ export default function Navbar() {
       </figure>
       <div>
         <ul className="nav-items">
-          <li>
-            <a href="/react-app-climbingwebsite#events">
-              Events
-            </a>
-          </li>
-          <li>
-            <a href="/react-app-climbingwebsite#gallery">
-              Gallery
-            </a>
-          </li>
-          <li>
-            <a href="/react-app-climbingwebsite#board">
-              Board
-            </a>
-          </li>
-          <li>
-            <a href="/react-app-climbingwebsite#contact">
-              Contact
-            </a>
-          </li>
+          {navItems.map((item) => {
+            return (
+              <li key={item}>
+                <Link to={`#${item}`}>
+                  {item.charAt(0).toUpperCase()}
+                  {item.slice(1)}
+                </Link>
+              </li>
+            )
+          })}
         </ul>
       </div>
     </nav>

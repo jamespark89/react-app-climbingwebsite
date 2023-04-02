@@ -2,14 +2,23 @@ import React, { useState } from "react"
 import "./Main.scss"
 import Hero from "../../assets/Hero.jpg"
 import SigninModal from "../SigninModal/SigninModal"
+import SignupModal from "../SignupModal/SignupModal"
 
 export default function Main() {
-  const [modal, setModal] = useState("off")
+  const [signinModal, setSigninModal] = useState("off")
+  const [signupModal, setSignupModal] = useState("off")
   const signinOnClick = () => {
-    if (modal === "off") {
-      setModal("on")
+    if (signinModal === "off") {
+      setSigninModal("on")
     } else {
-      setModal("off")
+      setSigninModal("off")
+    }
+  }
+  const signupOnClick = () => {
+    if (signupModal === "off") {
+      setSignupModal("on")
+    } else {
+      setSignupModal("off")
     }
   }
   return (
@@ -25,7 +34,10 @@ export default function Main() {
             Sport Climbing
           </h1>
           <p>LEAD - BOULDERING - SPEED</p>
-          <button className="joinbtn btn-yellow">
+          <button
+            className="joinbtn btn-yellow"
+            onClick={signupOnClick}
+          >
             JOIN NOW
           </button>
           <button
@@ -36,9 +48,15 @@ export default function Main() {
           </button>
         </div>
       </section>
+
+      <SignupModal
+        modal={signupModal}
+        setModal={setSignupModal}
+        signinOnClick={signupOnClick}
+      />
       <SigninModal
-        modal={modal}
-        setModal={setModal}
+        modal={signinModal}
+        setModal={setSigninModal}
         signinOnClick={signinOnClick}
       />
     </>

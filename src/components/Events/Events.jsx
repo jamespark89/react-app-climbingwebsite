@@ -2,8 +2,18 @@ import React from "react"
 import "./Events.scss"
 import Event_1 from "../../assets/Event_1.jpeg"
 import Event_2 from "../../assets/Event_2.jpeg"
+import SigninModal from "../SigninModal/SigninModal"
+import { useState } from "react"
 
 export default function Events() {
+  const [signinModal, setSigninModal] = useState("off")
+  const signinOnClick = () => {
+    if (signinModal === "off") {
+      setSigninModal("on")
+    } else {
+      setSigninModal("off")
+    }
+  }
   return (
     <section className="events" id="events">
       <h1>Upcoming Events</h1>
@@ -29,7 +39,10 @@ export default function Events() {
               </tr>
             </tbody>
           </table>
-          <button className="registerbtn btn-yellow">
+          <button
+            className="registerbtn btn-yellow"
+            onClick={signinOnClick}
+          >
             Register
           </button>
         </li>
@@ -54,11 +67,19 @@ export default function Events() {
               </tr>
             </tbody>
           </table>
-          <button className="registerbtn btn-yellow">
+          <button
+            className="registerbtn btn-yellow"
+            onClick={signinOnClick}
+          >
             Register
           </button>
         </li>
       </ul>
+      <SigninModal
+        modal={signinModal}
+        setModal={setSigninModal}
+        signinOnClick={signinOnClick}
+      />
     </section>
   )
 }

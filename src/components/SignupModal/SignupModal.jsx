@@ -1,20 +1,20 @@
 import React, { useEffect } from "react"
-import "./SigninModal.scss"
+import "./SignupModal.scss"
 
-export default function SigninModal({ modal, setModal }) {
+export default function SignupModal({ modal, setModal }) {
   const handleCancel = () => {
     setModal("off")
-    document.getElementById("id01").style.display = "none"
+    document.getElementById("id02").style.display = "none"
   }
 
   useEffect(() => {
     if (modal === "on") {
-      document.getElementById("id01").style.display =
+      document.getElementById("id02").style.display =
         "block"
     }
   }, [modal])
   return (
-    <div id="id01" className="modal">
+    <div id="id02" className="modal">
       <form className="modal-content animate" method="POST">
         <div className="container">
           {/* <!-- Username --> */}
@@ -37,21 +37,32 @@ export default function SigninModal({ modal, setModal }) {
             name="psw"
             required
           />
+          {/* Confirm Password */}
+          <label>
+            <b>Confirm Password</b>
+          </label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+          <label>
+            <b>Email</b>
+          </label>
+          <input
+            type="email"
+            placeholder="Enter eamil"
+            name="email"
+            required
+          />
           {/* <!-- Submit Button --> */}
           <button
             type="submit"
             className="loginbtn btn-yellow"
           >
-            Login
+            Siginin
           </button>
-          <label htmlFor="checkbox">
-            <input
-              type="checkbox"
-              id="checkbox"
-              name="remember"
-            />
-            Remember Me
-          </label>
         </div>
         <div className="container">
           <button
@@ -61,9 +72,6 @@ export default function SigninModal({ modal, setModal }) {
           >
             Cancel
           </button>
-          <span className="psw">
-            Forgot <a href="/">password?</a>
-          </span>
         </div>
       </form>
     </div>

@@ -13,6 +13,7 @@ export default function Home() {
       <Gallery />
       <Board />
       <Contact />
+      <div class="elfsight-app-b2db0b42-53f2-4037-8eab-f3da0eef39f7"></div>
     </>
   )
 }
